@@ -1,0 +1,325 @@
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 200ms ease-in;
+	-moz-transition: opacity 200ms ease-in;
+	transition: opacity 200ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	opacity:1.0;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+	background: #00d9ff;
+	opacity:1.0;
+}
+
+.notbold{
+	font-weight:normal
+}​
+
+#adsBottom {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+#adsBottomInner {
+	margin: 0px auto;
+	width: 728px;
+	height: 90px;
+	border: 5px solid white;
+	border-radius: 0px 0px 5px 5px;
+	background-color: #FFFFFF;
+	box-sizing: content-box;
+}
+
+.check {
+	position: relative;
+	top:-15px;
+	left:16px;
+}
+
+.btn-test {
+	position: relative;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.btn-naked {
+	display: block;
+	border: 0px solid white;
+	background-color: transparent;
+	outline-width: 0px !important;
+}
+
+.btn-test:before {
+	content: "";
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	top: -50%;
+	left: -50%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.btn-decal, .btn-decal:focus, .btn-decal:disabled {
+	display: block;
+	height: 41px;
+	width: 13.1%;
+	float: left;
+	border-color: #798996;
+	margin-left:3.05%;
+	background-color: #cac9cf;
+	border-width: 2px;
+	outline-width: 0px !important;
+}
+
+.btn-decal:hover {
+	border-width: 3px;
+	background-color: #bab9bf;
+	border-color: #798996;
+}
+
+.btn-color {
+	display: block;
+	height: 41px;
+	width: 13.1%;
+	float: left;
+	border-color: #8d898a;
+	border-width: 2px;
+	margin-left:3.05%;
+}
+
+.btn-color:hover, .btn-color:focus {
+	border-color: #798996;
+	border-width: 3px;
+	outline-width: 0px !important;
+}
+
+.btn-color1, .btn-color1:focus {
+	background-image: linear-gradient(#ff0000, #dd0000);
+}
+
+.btn-color2, .btn-color2:focus {
+	background-image: linear-gradient(#ff7700, #e86c00);
+}
+
+.btn-color3, .btn-color3:focus {
+	background-image: linear-gradient(#ffca00, #ddaf00);
+}
+
+.btn-color4, .btn-color4:focus {
+	background-image: linear-gradient(#aee718, #97c814);
+}
+
+.btn-color5, .btn-color5:focus {
+	background-image: linear-gradient(#0077ff, #0067dd);
+}
+
+.btn-color6, .btn-color6:focus {
+	background-image: linear-gradient(#ec13d5, #c911b5);
+}
+
+.btn-cfg {
+	display: block;
+	height: 35px;
+	width: 12.5%;
+	float: left;
+	background-color: #51b6fc;
+	border-color: #51b6fc;
+	padding-left: 0px;
+	padding-top: 0px;
+}
+
+.btn-cfg, .btn-cfg:hover, .btn-cfg:focus, .btn-cfg:disabled {
+	background-image: url("../images/menuicon.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.btn-cfg:hover, .btn-cfg:focus, .btn-cfg:disabled {
+	background-color: #459cd8;
+	border-color: #459cd8;
+}
+
+.btn-copy {
+	display: block;
+	height: 33px;
+	background-color: #ff944c;
+	border-color: #ff944c;
+	width: 50%;
+	margin-left: 25%;
+}
+
+.btn-copy:hover, .btn-copy:focus, .btn-copy:disabled {
+	background-color: #d47d42;
+	border-color: #d47d42;
+	outline-color: #FF0000 !important;
+}
+
+.btn-continue {
+	display: block;
+	height: 33px;
+	background-color: #ff944c;
+	border-color: #ff944c;
+	width: 60%;
+	margin-left: 20%;
+}
+
+.btn-continue:hover, .btn-continue:focus, .btn-continue:disabled {
+	background-color: #d47d42;
+	border-color: #d47d42;
+	outline-color: #FF0000 !important;
+}
+
+.btn-play {
+	display: block;
+	height: 35px;
+	background-color: #ff944c;
+	border-color: #ff944c;
+	width: 69%;
+	float: right;
+}
+
+.btn-play:hover, .btn-play:focus, .btn-play:disabled {
+	background-color: #d47d42;
+	border-color: #d47d42;
+	outline-color: #FF0000 !important;
+}
+
+.btn-spectate {
+	display: block;
+	height: 35px;
+	width: 12.5%;
+	float: right;
+	background-color: #ff5c44;
+	border-color: #ff5c44;
+	margin-left:10px;
+}
+
+.btn-spectate, .btn-spectate:hover, .btn-spectate:focus, .btn-spectate:disabled {
+	background-image: url("../images/spectateicon.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.btn-spectate:hover, .btn-spectate:focus, .btn-spectate:disabled {
+	background-color: #dd4f3a;
+	border-color: #dd4f3a;
+	outline-color: #FF0000 !important;
+}
+
+.rightBox {
+	z-index: 1000;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 108px;
+	width: 155px;
+	background-color: #FFF;
+	border-radius: 5px 0px 0px 0px;
+	padding: 5px 10px;
+	opacity: 0.9;
+}
+
+.rightBoxSmall {
+	z-index: 1000;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #FFF;
+	border-radius: 5px 0px 0px 0px;
+	padding: 5px 10px;
+	opacity: 0.9;
+}
+
+.leftBox {
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #FFF;
+	border-radius: 0px 0px 5px 0px;
+	padding: 5px 10px;
+}
+
+.leftBottomBox {
+	z-index: 1000;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #FFF;
+	border-radius: 0px 5px 0px 0px;
+	padding: 5px 10px;
+}
+
+.form-control:focus {
+	border-color: #ff944c;
+	box-shadow: inset 0 0 0px #ff944c, 0 0 10px #ff944c;
+}
+
+#canvas {
+	position: absolute;
+	cursor: url(../images/crosshair.png) 16 16, auto;
+}
+
+.wings_leaderboard_venatus {
+    z-index: 1000;
+    position: absolute;
+    left: 50%;
+    transform:translate(-50%,0%);
+}

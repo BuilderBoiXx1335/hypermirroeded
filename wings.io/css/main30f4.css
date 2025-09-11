@@ -1,0 +1,56 @@
+html {
+	background: #2791ca;
+}
+
+body {
+	font-family: "proxima-nova-1","proxima-nova-2", arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-size: 62.5%;
+}
+
+h1 {
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 268px;
+	height: 30px;
+	overflow: hidden;
+	text-indent: 300px;
+}
+
+h2 {
+	color: #fff;
+	font-size: 1.3em;
+	margin-bottom: 0.2em;
+	font-weight: bold;
+}
+
+a {
+	color: #c0fdf7;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+p {
+	color: #999999;
+	font-size: 1.3em;
+	margin-bottom:0.5em;
+}
+
+strong {
+	font-weight:bold;
+}
+
+#ldr-top {
+    z-index: 1000;
+    position: absolute;
+    left: 50%;
+    transform:translate(-50%,0%);
+}
